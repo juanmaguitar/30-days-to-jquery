@@ -1,24 +1,22 @@
 body {
     width: 500px;
-	
+
     margin: auto;
     text-align: center;
 }
 
 dl {
-	
+
 }
 
 dd {
     margin: 0;
-	
+
     padding: 1em 0;
 }
 
 dt {
     cursor: pointer;
-    
-	
     font-weight: bold;
     font-size : 1.5em;
     line-height: 2em;
@@ -27,7 +25,18 @@ dt {
     border-top: 1px solid white;
 }
 
+/*
+    https://css-tricks.com/almanac/selectors/n/nth-last-child/
+    http://lea.verou.me/demos/nth.html
+    https://css-tricks.com/examples/nth-child-tester/#
+*/
+
 dt:first-child { border-top: none; }
 dt:nth-last-child(2) { border-bottom: none; }
+
+/*
+dt:nth-last-child(2) { border:1px solid red; }
+dt:nth-last-of-type(1) { border:1px solid red; }
+*/
 
 .hide { display: none;}

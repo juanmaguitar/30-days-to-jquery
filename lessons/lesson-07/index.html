@@ -68,10 +68,25 @@
 			class: 'co',
 			text: $this.text()
 		}).prependTo( $this.closest('p') );
-		
-	});
-	
 
+	});
+
+/*
+	function addBlockquote() {
+
+		var $this = $(this); // span
+		var $blockquote = $('<blockquote></blockquote>', {
+			class: 'co',
+			text: $this.text()
+		})
+
+		$blockquote.prependTo( $this.closest('p') );
+
+	}
+
+	$('article').find('span.co').each(addBlockquote);
+
+*/
 })();
 
 </script>
